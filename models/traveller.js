@@ -18,5 +18,12 @@ email: {
     type: DataTypes.STRING,
     allowNull: true,
 }
+},
+{
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'traveller',
 });
 module.exports = traveller;

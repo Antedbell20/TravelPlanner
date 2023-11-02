@@ -33,5 +33,12 @@ trips.init({
             key: "id",
         }
     }
+},
+{
+sequelize,
+timestamps: false,
+freezeTableName: true,
+underscored: true,
+modelName: 'trips',
 });
 module.exports = trips;
