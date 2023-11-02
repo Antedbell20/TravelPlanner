@@ -1,5 +1,5 @@
 const {Model, DataTypes} = require('sequelize');
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection.js').default;
 
 class traveller extends Model {}
 
@@ -19,4 +19,4 @@ email: {
     allowNull: true,
 }
 });
-module.exports = Traveller;
+module.exports = traveller;
